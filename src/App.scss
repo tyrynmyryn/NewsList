@@ -1,0 +1,92 @@
+@import './style/vars.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 20px 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    transition: .2s all;
+    margin-top: 20px;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    }
+    &_add {
+        background: $add-button-background;
+    }
+    &_change {
+        background: $change-button-background;
+    }
+}
+
+.btn {
+    opacity: .75;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    transition: .2s all;
+    cursor: pointer;
+
+    &_mr {
+        margin-right: 25px;
+    }
+
+    &_add {
+        width: 286px;
+        padding: 10px 25px;
+        background: $add-button-background;
+    }
+
+    &_change,
+    &_delete {
+        width: 150px;
+        padding: 15px 20px;
+    }
+
+    &_change {
+        background: $change-button-background;
+    }
+
+    &_delete {
+        background: $delete-button-background;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.error {
+    margin-top: 20px;
+    color: rgb(255, 125, 125);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
